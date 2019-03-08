@@ -1,10 +1,14 @@
-# Cross-platform SQLite storage plugin for Cordova/PhoneGap - cordova-sqlite-storage plugin version
+# Cross-platform SQLite storage plugin for Cordova/PhoneGap - cordova-sqlite-express-build-support plugin version
 
 Native SQLite component with API based on HTML5/[Web SQL (DRAFT) API](http://www.w3.org/TR/webdatabase/) for the following platforms:
 - Android
 - iOS
 - macOS ("osx" platform)
-- Windows 10 (UWP) DESKTOP and MOBILE (see below for major limitations)
+- ~~Windows 10 (UWP) DESKTOP and MOBILE (see below for major limitations)~~
+
+This plugin version uses the internal SQLite libraries on Android, iOS, and macOS. Note that this means that some recent SQLite security updates and other updates may not be included.
+
+XXX TODO UPDATE THIS DOCUMENTATION for use of internal SQLite libraries
 
 Browser platform is currently supported with some limitations as described in [browser platform usage notes](#browser-platform-usage-notes) section below, will be supported with more features such as numbered parameters and SQL batch API in the near future.
 

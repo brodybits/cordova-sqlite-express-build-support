@@ -1,37 +1,32 @@
 {
-  "name": "cordova-sqlite-storage",
-  "version": "3.1.1-dev",
-  "description": "Native interface to SQLite for PhoneGap/Cordova - cordova-sqlite-storage plugin version",
+  "name": "cordova-sqlite-express-build-support",
+  "version": "0.0.1-dev",
+  "description": "Native interface to SQLite for PhoneGap/Cordova - cordova-sqlite-express-build-support plugin version",
   "cordova": {
-    "id": "cordova-sqlite-storage",
+    "id": "cordova-sqlite-express-build-support",
     "platforms": [
       "android",
       "ios",
-      "osx",
-      "windows"
+      "osx"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xpbrew/cordova-sqlite-storage.git"
+    "url": "https://github.com/brodybits/cordova-sqlite-express-build-support.git"
   },
   "keywords": [
     "sqlite",
     "ecosystem:cordova",
     "cordova-android",
     "cordova-ios",
-    "cordova-osx",
-    "cordova-windows"
+    "cordova-osx"
   ],
   "author": "various",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xpbrew/cordova-sqlite-storage/issues"
+    "url": "https://github.com/brodybits/cordova-sqlite-express-build-support/issues"
   },
-  "homepage": "https://github.com/xpbrew/cordova-sqlite-storage",
-  "dependencies": {
-    "cordova-sqlite-storage-dependencies": "2.0.0"
-  },
+  "homepage": "https://github.com/brodybits/cordova-sqlite-express-build-support",
   "scripts": {
     "start": "node scripts/prepareSpec.js"
   },

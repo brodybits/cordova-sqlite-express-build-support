@@ -146,7 +146,9 @@
                 [self.commandDelegate sendPluginResult:pluginResult callbackId: command.callbackId];
                 return;
             } else {
+#if 0 // XXX
                 sqlite3_db_config(db, SQLITE_DBCONFIG_DEFENSIVE, 1, NULL);
+#endif
 
                 // for SQLCipher version:
                 // NSString *dbkey = [options objectForKey:@"key"];

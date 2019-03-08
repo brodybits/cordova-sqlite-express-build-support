@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-sqlite-storage"
-    version="3.1.1-dev">
+    id="cordova-sqlite-express-build-support"
+    version="0.0.1-dev">
 
-    <name>Cordova sqlite storage plugin - cordova-sqlite-storage plugin version</name>
+    <name>Cordova sqlite storage plugin - cordova-sqlite-express-build-support plugin version</name>
 
     <license>MIT</license>
 
@@ -14,7 +14,9 @@
     <author>Litehelpers/Various</author>
 
     <!-- THANKS to AllJoyn-Cordova / cordova-plugin-alljoyn: -->
+    <!-- -
     <hook type="before_plugin_install" src="scripts/beforePluginInstall.js" />
+    - -->
 
     <js-module src="www/SQLitePlugin.js" name="SQLitePlugin">
         <clobbers target="SQLitePlugin" />
@@ -30,13 +32,8 @@
         </config-file>
 
         <source-file src="src/android/io/sqlc/SQLitePlugin.java" target-dir="src/io/sqlc"/>
+        <!-- built-in only: -->
         <source-file src="src/android/io/sqlc/SQLiteAndroidDatabase.java" target-dir="src/io/sqlc"/>
-        <source-file src="src/android/io/sqlc/SQLiteConnectorDatabase.java" target-dir="src/io/sqlc"/>
-
-        <!-- Android-sqlite-connector [jar]: -->
-        <lib-file src="node_modules/cordova-sqlite-storage-dependencies/libs/sqlite-connector.jar" />
-        <!-- Android-sqlite-connector native driver [native libs in jar]: -->
-        <lib-file src="node_modules/cordova-sqlite-storage-dependencies/libs/sqlite-native-driver.jar" />
     </platform>
 
     <!-- iOS -->
@@ -55,9 +52,8 @@
         <source-file src="src/ios/PSPDFThreadSafeMutableDictionary.m"
                 compiler-flags="-w" />
 
-        <header-file src="node_modules/cordova-sqlite-storage-dependencies/sqlite3.h" />
-        <source-file src="node_modules/cordova-sqlite-storage-dependencies/sqlite3.c"
-                     compiler-flags="-w -DSQLITE_THREADSAFE=1 -DSQLITE_DEFAULT_SYNCHRONOUS=3 -DSQLITE_DEFAULT_MEMSTATUS=0 -DSQLITE_OMIT_DECLTYPE -DSQLITE_OMIT_DEPRECATED -DSQLITE_OMIT_PROGRESS_CALLBACK -DSQLITE_OMIT_SHARED_CACHE -DSQLITE_TEMP_STORE=2 -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_RTREE -DSQLITE_DEFAULT_PAGE_SIZE=1024" />
+        <!-- built-in -->
+        <framework src="libsqlite3.tbd" />
     </platform>
 
     <!-- macOS (osx) -->
@@ -76,13 +72,12 @@
         <source-file src="src/ios/PSPDFThreadSafeMutableDictionary.m"
                 compiler-flags="-w" />
 
-        <header-file src="node_modules/cordova-sqlite-storage-dependencies/sqlite3.h" />
-        <source-file src="node_modules/cordova-sqlite-storage-dependencies/sqlite3.c"
-                     compiler-flags="-w -DSQLITE_THREADSAFE=1 -DSQLITE_DEFAULT_SYNCHRONOUS=3 -DSQLITE_DEFAULT_MEMSTATUS=0 -DSQLITE_OMIT_DECLTYPE -DSQLITE_OMIT_DEPRECATED -DSQLITE_OMIT_PROGRESS_CALLBACK -DSQLITE_OMIT_SHARED_CACHE -DSQLITE_TEMP_STORE=2 -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_RTREE -DSQLITE_DEFAULT_PAGE_SIZE=1024" />
+        <!-- built-in -->
+        <framework src="libsqlite3.tbd" />
     </platform>
 
     <!-- windows -->
-    <platform name="windows">
+    <platform name="windows-unsupported">
         <js-module src="src/windows/sqlite-proxy.js" name="SQLiteProxy">
             <runs />
         </js-module>
