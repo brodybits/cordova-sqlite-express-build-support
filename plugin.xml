@@ -48,8 +48,7 @@
         <header-file src="src/ios/SQLitePlugin.h" />
         <source-file src="src/ios/SQLitePlugin.m" />
 
-        <header-file src="src/ios/PSPDFThreadSafeMutableDictionary.h" />
-        <source-file src="src/ios/PSPDFThreadSafeMutableDictionary.m"
+        <source-file src="src/ios/CustomPSPDFThreadSafeMutableDictionary.m"
                 compiler-flags="-w" />
 
         <!-- built-in -->
@@ -68,8 +67,7 @@
         <header-file src="src/ios/SQLitePlugin.h" />
         <source-file src="src/ios/SQLitePlugin.m" />
 
-        <header-file src="src/ios/PSPDFThreadSafeMutableDictionary.h" />
-        <source-file src="src/ios/PSPDFThreadSafeMutableDictionary.m"
+        <source-file src="src/ios/CustomPSPDFThreadSafeMutableDictionary.m"
                 compiler-flags="-w" />
 
         <!-- built-in -->
