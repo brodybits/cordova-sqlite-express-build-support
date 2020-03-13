@@ -1,6 +1,6 @@
 {
   "name": "cordova-sqlite-express-build-support",
-  "version": "0.0.1-dev",
+  "version": "0.1.0-dev",
   "description": "Native interface to SQLite for PhoneGap/Cordova - cordova-sqlite-express-build-support plugin version",
   "cordova": {
     "id": "cordova-sqlite-express-build-support",
